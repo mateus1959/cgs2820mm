@@ -1,0 +1,111 @@
+body {
+ margin: 0;
+ background-color: hsl(197,39%,37%);
+ color: hsl(197,16%,22%);
+ font-family: Verdana, Arial, sans-serif;
+}
+
+header {
+    background-color: hsl(197,39%,37%);
+    color:  hsl(32,10%,95%);
+    font-family: Georgia, serif;
+    background-image: url('media/gcb-banner.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    text-align: right;
+    margin: 0;
+    padding-right: 10px;
+}
+
+h1 {
+    line-height: 76px;
+    height: 76px;
+    padding-right: 10px;
+    margin: 0;
+}
+
+h2 {
+    color: hsl(32, 25%, 40%);
+    font-family: Georgia, serif;
+}
+
+a {
+    color: hsl(32, 25%, 40%); 
+}
+
+a:visited {
+    color: hsl(197, 55%, 51%); 
+}
+
+a:hover {
+    background-color: hsl(32, 10%, 95%); 
+}
+
+nav {
+    background-color: hsl(32, 25%, 85%); /* Light orange background */
+    font-weight: bold; /* Makes the text bold */
+    border-color: hsl(32, 25%, 65%); /* Darker orange border color */
+    border-width: 2px; 
+    border-style: solid; /* Makes the border solid */
+    padding: 0.2em; /* Adds some padding inside the nav element */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    text-decoration: none; /* Removes the underline from links */
+    padding: 0 0.5em; /* Sets padding to 0 on top and bottom, 0.5em on right and left */
+    font-size: 1.2em; /* Increases the font size by 20% */
+}
+
+nav a {
+    color: hsl(197, 16%, 22%); /* Dark blue color for unvisited links */
+}
+
+nav a:visited {
+    color: hsl(197, 16%, 22%); /* Same dark blue color for visited links */
+}
+
+nav a:hover {
+    background-color: hsl(32, 10%, 95%); /* Light orange background on hover */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+.menu-chosen {
+    background-color: white;
+}
+
+main {
+    display: block;
+    background-color: #FFFFFF;
+    padding-top: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+#homehero, #honeymoonhero, #madeirahero {
+    /* Set a specific height */
+    height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#homehero { background-image: url(media/cwb71000.jpg); }
+#honeymoonhero { background-image: url(media/hm1.jpg); }
+#madeirahero { background-image: url(media/bp2.jpg);}
+
