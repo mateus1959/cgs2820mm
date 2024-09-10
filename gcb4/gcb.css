@@ -1,3 +1,6 @@
+* { box-sizing: border-box;}
+header, nav, main, footer { display: block;}
+
 body {
  margin: 0;
  background-color: hsl(197,39%,37%);
@@ -109,3 +112,41 @@ main {
 #honeymoonhero { background-image: url(media/hm1.jpg); }
 #madeirahero { background-image: url(media/bp2.jpg);}
 
+.excursion {
+    color: #050;
+    font-size: 1.4em;
+    font-size: italic;
+    font-family: Georgia, serif;
+}
+
+footer {
+    font-size: .70em;
+    font-style: italic;
+    padding: 0;
+    background-color: hsl(197, 68%, 35%);
+    color: hsl(195, 29%, 97%);
+}
+
+footer a {
+    color: hsl(32, 25%, 65%);
+    text-decoration: none;
+}
+
+footer a:hover {
+    background-color: hsl(197, 35%, 45%);
+    color: hsl(32,25%,65%);
+}
+
+#addy {
+    text-align: left;
+    float: left;
+    margin: 0; 
+    padding: 2em;
+}
+
+#copy {
+    text-align: right;
+    float: right;
+    margin: 0; 
+    padding: 2em;
+}
