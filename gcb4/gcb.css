@@ -150,3 +150,82 @@ footer a:hover {
     margin: 0; 
     padding: 2em;
 }
+
+#mobile { display: none; }
+
+#desktop { display: inline; }
+
+a.hmbgr {
+    background-color: hsl(197, 50%, 26%);
+    color: hsl(32, 10%, 95%);
+    padding: 0.95em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+a.hmbgr:hover {
+    background-color: hsl(32, 10%, 95%);
+    color: hsl(197, 50%, 26%);
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        line-height: 51px;
+        padding-right: 1.75em;
+        height: 51px;
+        margin: 0;
+        font-size: 1.5em;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.2em;
+        font-size: 1em;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid #fff;
+    }
+
+    nav li:last-child {
+        border-bottom: 0px;
+    }
+
+    main {
+        padding: 0.4em;
+    }
+
+    #mobile {
+        display: inline;
+    }
+
+    a.hmbgr {
+        display: block;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    #homehero, #honeymoonhero, #madeirahero {
+        display: none;
+    }
+}
+
+
+

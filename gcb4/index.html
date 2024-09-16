@@ -5,11 +5,16 @@
   <title>Gulf Coast Beaches</title>
   <meta charset="utf-8">
   <link rel="icon" href="media/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="gcb.css">
 </head>
   
 <body>
-  <header><h1>Gulf Coast Beaches</h1></header>
+  <header>
+    <h1>Gulf Coast Beaches</h1>
+    <a class="hmbgr"><i class="fa fa-bars"></i></a>
+  </header>
 
   <nav><ul>
     <li><a href="index.html" class="menu-chosen" title="Go Home">Home</a></li>
@@ -32,9 +37,12 @@
     </ol>
 
     <p><strong>Click the largest shell in the image for a discount code!</strong></p>
-
-    <p><img src="media/shells_on_beach500.jpeg" alt="Shells on Gulf Coast Beach" usemap="#peri"></p>
-
+    <picture>
+      <source srcset="media/shells_on_beach350.png" media="(max-width: 550px)">
+      <source srcset="media/shells_on_beach500.png" media="(max-width: 800px)">
+      <source srcset="media/shells_on_beach750.png" media="(max-width: 1050px)"> 
+      <img src="media/shells_on_beach500.jpeg" alt="Shells on Gulf Coast Beach" usemap="#peri">
+    </picture>
     <map name="peri">
 
       <area shape="rect" coords="230,200,410,305" href="clicked.html" alt="Large shell">
@@ -52,7 +60,10 @@
     <p id="copy">
       &copy; 2023 GCB<br>
       <a href="mailto:mmachado17@hccfl.edu" title="Send e-mail to mmachado17@hccfl.edu">mmachado17@hccfl.edu</a><br>
-      888-555-2222
+      <span id="mobile"><a href="tel:888-555-2222">
+        <i class="fa fa-phone"></i> 888-555-2222</a>
+      </span>
+      <span id="desktop">888-555-2222</span>
     </p>
   </footer>
 </body>
