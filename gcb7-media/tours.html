@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+  <title>GCB :: Tours</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="gcb.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="gcb.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.min.js"></script>
+  
+  <script>
+    function captureFormData(f) 
+    {
+      // data will contain comma separated values for popup box
+      var data = "", i, len;
+      
+      // set len to number of form elements f contains
+      len = f.length;
+
+      // traverse elements, one by one, where i is current element
+      for (i = 0; i < len; i++)  
+      {
+        // append value of current form element to data
+        data = data + f.elements[i].value;
+
+        // if not at end of form, so not last form element yet
+        if (i < len-1) 
+        { 
+          data += ", ";  // append comma
+        }
+      }
+      // in pop up display comma separated values stored in data
+      alert (data);  
+    }
+  </script>
+</head>
+  
+<body>
+  <header>
+    <h1>Gulf Coast Beaches</h1>
+    <a class="hmbgr" onclick="toggleNavBar()"><i class="fa fa-bars"></i></a>
+  </header>
+
+  <nav id="navbar">
+    <ul>
+      <li><a href="index.html" title="Go Home">Home</a></li>
+      <li><a href="passagrille.html" title="Pass-a-Grille">Pass-a-Grille</a></li>
+      <li><a href="treasureisland.html" title="Go to Treasure Island">Treasure Island</a></li>
+      <li><a href="madeira.html" title="Go to Madeira">Madeira</a></li>
+      <li><a href="honeymoon.html" title="Honeymoon">Honeymoon</a></li>
+      <li><a href="tours.html" class="menu-chosen" title="Go to Tours">Tours</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <h2>Tour Reservation</h2>
+    
+    <div style="text-align: center;">
+    <p>Required information is marked with an asterisk (*).</p>
+
+    <form id="frm">
+    <div class="grid-container">
+      <div class="rightJustify">
+        <label for="myFName"> First Name: </label>
+      </div>
+      <div class="leftJustify">
+        <input type="text" id="myFName" name="myFName" >
+      </div>
+
+      <div class="rightJustify">
+        <label for="myLName"> Last Name: </label>
+      </div>
+      <div class="leftJustify">
+        <input type="text" id="myLName" name="myLName" >
+      </div>
+
+      <div class="rightJustify">
+        <label for="myEmail">* E-mail: </label>
+      </div>
+      <div class="leftJustify">
+        <input type="email" id="myEmail" name="myEmail" required>
+      </div>
+      
+      <div class="rightJustify">
+        <label for="myTour"> Tour: </label>
+      </div>
+      <div class="leftJustify">
+        <select id="myTour" name="myTour">
+          <option>John's Pass Village and Boardwalk</option>
+          <option>Madeira's Southern Rocky Point Shore Fishing</option>
+          <option>Dolphin Watching Cruise</option>
+          <option>Floating Tiki Hut</option>
+        </select>
+      </div>
+
+      <div class="rightJustify">
+        <label for="myDate">Tour Date: </label>
+      </div>
+      <div class="leftJustify">
+        <input type="date" id="myDate" name="myDate">
+      </div>
+
+      <div class="rightJustify">
+        <label for="myGroup">Group Size: </label>
+      </div>
+      <div class="leftJustify">
+        <input type="number" id="myGroup" name="myGroup" min="1" max="10">
+      </div>
+
+      <div class="rightJustify">
+        <label for="myDCode"> Discount Code: </label>
+      </div>
+      <div class="leftJustify">
+        <input type="text" id="myDCode" name="myDCode">
+      </div>
+
+      <div class="rightJustify">
+        <label for="myComments"> Comments: </label>
+      </div>
+      <div class="leftJustify">
+        <textarea id="myComments" name="myComments" rows="3" cols="50" ></textarea>
+      </div>
+
+      <div class="rightJustify">
+        &nbsp;
+      </div>
+      <div class="leftJustify">
+        <input type="submit" id="mySubmit" value="Submit">
+      </div>
+    </div>
+    </form>
+    </div>
+
+    <script>
+      $("#frm").validate();  // validate frm form elements
+
+      $(function () {
+        $('#frm').submit(function () {  // redefine submit for frm
+            if($(this).valid()) {  // if this form is valid
+                captureFormData(this);  // send it to captureFormData
+            }
+        });
+      });
+    </script>
+  </main>
+  
+  <footer>
+    <p id="addy">
+      Gulf Coast Beaches<br>
+      Pinellas County<br>
+      Florida
+    </p>
+
+    <p id="copy">
+      &copy; 2023 Gulf Coast Beaches<br>
+      <a href="mailto:mstewart22@hccfl.edu" title="Send e-mail to mstewart22@hccfl.edu">mstewart22@hccfl.edu</a><br>
+      <span id="mobile"><a href="tel:888-555-2222">
+        <i class="fa fa-phone"></i> 888-555-2222</a></span>
+      <span id="desktop">888-555-2222</span>
+    </p>
+  </footer>
+
+</body>  
+</html>
+
+<!-- GCB solution file created by Shelley Stewart, Ph.D., (c) 2023 -->
