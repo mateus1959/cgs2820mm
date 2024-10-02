@@ -193,6 +193,11 @@ label.error {
     grid-row-gap: 10px;
 }
 
+@media only screen and (max-width: 580px) {
+    .mob-video { width: 420px; height: 236px; }
+    .mob-scratch { width: 363px; height: 302px; }
+    }    
+
 #addy {
     text-align: left;
     float: left;
@@ -285,5 +290,10 @@ a.hmbgr:hover {
     }
 }
 
+.captitle {
+    color: hsl(197,16%,22%);
+    font-weight: bold;
+    }
+    
 
 
