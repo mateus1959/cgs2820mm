@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigonometric Calculator</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: hsl(241 80% 62%);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .calculator {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: white;
+        }
+        input[type="number"], button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: hsl(241 80% 62%);
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: hsl(241 80% 52%);
+        }
+        .result {
+            margin-top: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Math & Physics Toolkit</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="trigonometric_values.html">Trigonometric Values</a>
+        <a href="quadratic.html">Quadratic Solver</a>
+        <a href="vectors.html">Vector Calculator</a>
+        <a href="trigonometric_calculator.html">Trigonometric Calculator</a>
+    </nav>
+
+    <h2>Trigonometric Calculator</h2>
+
+    <div class="calculator">
+        <label for="angle">Enter Angle (°):</label>
+        <input type="number" id="angle" placeholder="Angle in degrees" required>
+
+        <button onclick="calculate()">Calculate</button>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Math & Physics Toolkit</p>
+        <p>Contact us at support@mathphysicstoolkit.com</p>
+    </footer>
+
+    <script>
+        function calculate() {
+            const angleInput = document.getElementById('angle').value;
+            const angleInRadians = angleInput * (Math.PI / 180); // Convert degrees to radians
+
+            // Calculate sine, cosine, and tangent
+            const sinValue = Math.sin(angleInRadians);
+            const cosValue = Math.cos(angleInRadians);
+            const tanValue = Math.tan(angleInRadians);
+
+            // Display results
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `
+                <h3>Results:</h3>
+                <p><strong>Sine (sin):</strong> ${sinValue.toFixed(4)}</p>
+                <p><strong>Cosine (cos):</strong> ${cosValue.toFixed(4)}</p>
+                <p><strong>Tangent (tan):</strong> ${tanValue.toFixed(4)}</p>
+            `;
+        }
+    </script>
+
+</body>
+</html>

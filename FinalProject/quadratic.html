@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Equation Solver</title>
+    <link rel="stylesheet" href="stylesheets/quadratic.css">
+    <style>
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Math & Physics Toolkit</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="trigonometric_values.html">Trigonometric Values</a>
+        <a href="quadratic.html">Quadratic Solver</a>
+        <a href="vectors.html">Vector Calculator</a>
+        <a href="trigonometric_calculator.html">Trigonometric Calculator</a>
+    </nav>
+
+    <h2>Quadratic Equation Solver</h2>
+
+    <form>
+        <div id="box">
+            <p>
+                <input id="a" placeholder="a" type="text">
+                <span class="equation">x&sup2 + </span>
+                <input id="b" placeholder="b" type="text">
+                <span class="equation">x + </span>
+                <input id="c" placeholder="c" type="text">
+                <span class="equation"> = 0</span>
+            </p>
+            <p><button type="button" id="solveBtn">Solve equation!</button></p>
+            <div>
+                <h2><span class="contentsDisplay" style="display: none" id="root1"></span></h2>
+                <h2><span class="contentsDisplay" style="display: none" id="root2"></span></h2>
+            </div>
+            <div>
+                <h2 class="contentsDisplay" style="display: none" id="noRoots">No real roots.</h2>
+                <h3 class="contentsDisplay" style="display: none" id="a_greater_than_0">Not a quadratic equation. "a" must be greater than 0 😉</h3> 
+            </div>
+        </div>   
+    </form>
+    <footer>
+        <p>&copy; 2024 Math & Physics Toolkit</p>
+        <p>Contact us at support@mathphysicstoolkit.com</p>
+    </footer>
+    <script src="scripts/quadratic.js"></script>
+</body>
+</html>

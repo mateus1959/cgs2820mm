@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A toolkit for math and physics calculations.">
+    <title>Math & Physics Toolkit</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: hsl(241 80% 62%);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        nav {
+            text-align: center;
+            margin: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        .tools-section {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .tool {
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .tool h3 {
+            margin-bottom: 10px;
+            color: hsl(241 100% 62%);
+        }
+        .tool button {
+            padding: 10px 20px;
+            background-color: hsl(241 80% 62%);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .tool button:hover {
+            background-color: hsl(241 60% 62%);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Math & Physics Toolkit</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#tools-section">Tools</a>
+        <a href="#">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Main Section -->
+    <main>
+        <h2>Welcome to the Math & Physics Toolkit</h2>
+        <p>Your resource for essential tools to help with mathematical and physical calculations. Explore our growing collection of calculators designed for students, professionals, and enthusiasts alike.</p>
+
+        <!-- Tools Section -->
+        <section id="tools-section" class="tools-section">
+            <div class="tool">
+                <h3>Quadratic Equation Solver</h3>
+                <p>Easily solve any quadratic equation using our tool.</p>
+                <button onclick="window.location.href='quadratic.html';">Use Solver</button>
+            </div>
+            <div class="tool">
+                <h3>Vector Calculator</h3>
+                <p>Perform vector addition, dot and cross products with ease.</p>
+                <button onclick="window.location.href='vectors.html';">Use Vector Calculator</button>
+            </div>
+            <div class="tool">
+                <h3>Trigonometry Table</h3>
+                <p>Check the sin, cos and tan of common angles.</p>
+                <button onclick="window.location.href='trigonometric_values.html';">See table</button>
+            </div>
+            <div class="tool">
+                <h3>Trigonometric Calculator</h3>
+                <p>Calculate the sin, cos and tan of any angle.</p>
+                <button onclick="window.location.href='trigonometric_calculator.html';">Use calculator</button>
+            </div>
+        </section>
+
+        <!-- Upcoming Features Section -->
+        <section>
+            <h2>Upcoming Features</h2>
+            <p>We're constantly working on new tools! Stay tuned for more physics and math calculators like matrix solvers, differential equation solvers, and more.</p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Math & Physics Toolkit</p>
+        <p>
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a> | 
+            <a href="#">Support</a>
+        </p>
+        <p>Follow us on:
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">LinkedIn</a>
+        </p>
+        <p>Contact us at support@mathphysicstoolkit.com</p>
+    </footer>
+
+</body>
+</html>
