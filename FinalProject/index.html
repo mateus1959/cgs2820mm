@@ -61,6 +61,26 @@
         .tool button:hover {
             background-color: hsl(241 60% 62%);
         }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        /* Styling for the image field */
+        .image-field {
+            margin: 50px 0;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-field img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
         footer {
             background-color: #333;
             color: white;
@@ -92,9 +112,13 @@
 
     <!-- Main Section -->
     <main>
-        <h2>Welcome to the Math & Physics Toolkit</h2>
-        <p>Your resource for essential tools to help with mathematical and physical calculations. Explore our growing collection of calculators designed for students, professionals, and enthusiasts alike.</p>
-
+        <div class="container">
+            <h2>Welcome to the Math & Physics Toolkit</h2>
+            <p>Your resource for essential tools to help with mathematical and physical calculations. Explore our growing collection of calculators designed for students, professionals, and enthusiasts alike.</p>            
+            <div class="image-field">
+                <img src="media/math1.jpg" alt="Math and Physics Topic Image">
+            </div>
+        </div>
         <!-- Tools Section -->
         <section id="tools-section" class="tools-section">
             <div class="tool">
@@ -132,7 +156,7 @@
         <p>
             <a href="#">Privacy Policy</a> | 
             <a href="#">Terms of Service</a> | 
-            <a href="#">Support</a>
+            <a href="contact.html">Support</a>
         </p>
         <p>Follow us on:
             <a href="#">Facebook</a> |

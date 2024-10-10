@@ -22,23 +22,39 @@
 
     <h2>Vector Algebra</h2>
 
-    <div>
-        <p>
-            <label for="vector1">Enter vector #1:</label>
-            <input autofocus id="vector1" placeholder="vector #1" type="number">
-        </p>
-            <label for="vector2">Enter vector #2:</label>
-            <input id="vector2" placeholder="vector #2" type="number">
-        </p>
-        <p>
-            <label for="vector2">Enter angle θ (deg)</label>
-            <input id="angle" placeholder="angle θ" type="number">
-        </p>
-        <button id="resultantBtn">Resultant</button>
-        <button id="dotProductBtn">Dot Product</button>
-        <button id="crossProductBtn">Cross Product</button>
+  
+    <!-- Flex container to hold form and image side by side -->
+    <div class="flex-container">
+        <!-- Form Section -->
+        <div class="form-section">
+            <p>
+                <label for="vector1">Enter vector #1:</label>
+                <input autofocus id="vector1" placeholder="vector #1" type="number">
+            </p>
+            <p>
+                <label for="vector2">Enter vector #2:</label>
+                <input id="vector2" placeholder="vector #2" type="number">
+            </p>
+            <p>
+                <label for="angle">Enter angle θ (deg):</label>
+                <input id="angle" placeholder="angle θ" type="number">
+            </p>
+            <button id="resultantBtn">Resultant</button>
+            <button id="dotProductBtn">Dot Product</button>
+            <button id="crossProductBtn">Cross Product</button>
+            <p id="answer"></p>
+        </div>
+
+        <!-- Image Section -->
+        <div class="image-section">
+            <img src="media/math2.jpg" alt="Vector Algebra Illustration">
+        </div>
     </div>
-    <p id="answer"></p>
+
+    <footer>
+        <p>&copy; 2024 Math & Physics Toolkit</p>
+        <p>Contact us at support@mathphysicstoolkit.com</p>
+    </footer>
     <script src="scripts/vectors.js"></script>
 </body>
-</html>
+</html> 
